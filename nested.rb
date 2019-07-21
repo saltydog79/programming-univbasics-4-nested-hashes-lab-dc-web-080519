@@ -76,7 +76,8 @@ def adding_matz
         }
      }
 
-		 programmer_hash.keys[:yokihiro_matsumoto]
+		 programmer_hash[:yokihiro_matsumoto] = {}
+		 programmer_hash[:yokihiro_matsumoto][:known_for]
 		 puts programmer_hash
 
 	# 	 programmer_hash[:yokihiro_matsumoto] = [:known_for]
