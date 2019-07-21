@@ -12,10 +12,10 @@ def hopper
         },
         :dennis_ritchie => {
           :known_for => "Unix",
-          :languages => ["C"]
+          :languages => "C"
         }
      }
-		 return programmer_hash["grace_hopper"]
+		 return programmer_hash[:grace_hopper]
 end
 
 
@@ -32,10 +32,10 @@ def alan_kay_is_known_for
         },
         :dennis_ritchie => {
           :known_for => "Unix",
-          :languages => ["C"]
+          :languages => "C"
         }
      }
-programmer_hash["alan_kay"]["known_for"]
+programmer_hash[:alan_kay][:known_for]
 end
 
 
@@ -52,10 +52,10 @@ def dennis_ritchies_language
         },
         :dennis_ritchie => {
           :known_for => "Unix",
-          :languages => ["C"]
+          :languages => "C"
         }
      }
-programmer_hash["dennis_ritchie"]["languages"]
+programmer_hash[:dennis_ritchie][:languages]
 end
 
 
@@ -72,13 +72,17 @@ def adding_matz
         },
         :dennis_ritchie => {
           :known_for => "Unix",
-          :languages => ["C"]
+          :languages => "C"
         }
      }
-		 programmer_hash["yokihiro_matsumoto"][:known_for] = "Ruby"
-		 puts programmer_hash
-		 programmer_hash["yokihiro_matsumoto"][:languages] = "LISP", "C"
-		 puts programmer_hash
+		 programmer_hash[:yokihiro_matsumoto] = {}
+ 	 	puts programmer_hash
+
+		#  programmer_hash[:yokihiro_matsumoto][:known_for => "Ruby"]
+		# 	puts programmer_hash
+		#  programmer_hash[:yokihiro_matsumoto][:known_for] = "Ruby"
+		# #  [:languages] = ["LISP", "C"]
+		#  puts programmer_hash
 end
 
 
@@ -95,10 +99,10 @@ def changing_alan
         },
         :dennis_ritchie => {
           :known_for => "Unix",
-          :languages => ["C"]
+          :languages => "C"
         }
      }
-programmer_hash["changing_alan"]["known_for"] = "GUI"
+programmer_hash[:changing_alan][:known_for] = "GUI"
 end
 
 def adding_to_dennis
@@ -114,9 +118,9 @@ def adding_to_dennis
         },
         :dennis_ritchie => {
           :known_for => "Unix",
-          :languages => ["C"]
+          :languages => "C"
         }
      }
-programmer_hash[dennis_ritchie][languages] << "Assembly"
+programmer_hash[:dennis_ritchie][:languages] << "Assembly"
 puts programmer_hash
 end
