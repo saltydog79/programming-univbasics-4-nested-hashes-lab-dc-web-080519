@@ -77,6 +77,7 @@ def adding_matz
      }
 
 		 add_yokihiro = {[:yokihiro_matsumoto][:known_for] = "Ruby" }
+		 puts programmer_hash
 	# 	 programmer_hash[:yokihiro_matsumoto] = [:known_for]
  # 	 puts programmer_hash
 		#  programmer_hash[:yokihiro_matsumoto][:known_for] = "Ruby"
